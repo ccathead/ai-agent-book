@@ -1,0 +1,503 @@
+{
+  "default_queries": {
+    "bm25_default": {
+      "summary": {
+        "recall@k": 0.8333333333333334,
+        "mrr": 0.7916666666666666,
+        "ndcg@k": 0.8025774794642881
+      },
+      "per_query": [
+        {
+          "query": "XR-7003",
+          "expected": [
+            "xr_7003"
+          ],
+          "category": "technical-code",
+          "top1": "xr_7003",
+          "mrr": 1.0,
+          "recall@k": 1.0
+        },
+        {
+          "query": "XR-7005",
+          "expected": [
+            "xr_7005"
+          ],
+          "category": "technical-code",
+          "top1": "xr_7005",
+          "mrr": 1.0,
+          "recall@k": 1.0
+        },
+        {
+          "query": "HTTP-403",
+          "expected": [
+            "http_403"
+          ],
+          "category": "technical-code",
+          "top1": "http_403",
+          "mrr": 1.0,
+          "recall@k": 1.0
+        },
+        {
+          "query": "HTTP-400",
+          "expected": [
+            "http_400"
+          ],
+          "category": "technical-code",
+          "top1": "http_400",
+          "mrr": 1.0,
+          "recall@k": 1.0
+        },
+        {
+          "query": "Alexander Humphrey",
+          "expected": [
+            "name_alexander_humphrey"
+          ],
+          "category": "exact-name",
+          "top1": "name_alexander_humphrey",
+          "mrr": 1.0,
+          "recall@k": 1.0
+        },
+        {
+          "query": "a beginner friendly language with tidy syntax",
+          "expected": [
+            "sem_readable"
+          ],
+          "category": "semantic",
+          "top1": "sem_readable",
+          "mrr": 1.0,
+          "recall@k": 1.0
+        },
+        {
+          "query": "reclaiming unused heap space without programmer effort",
+          "expected": [
+            "sem_gc"
+          ],
+          "category": "semantic",
+          "top1": null,
+          "mrr": 0.0,
+          "recall@k": 0.0
+        },
+        {
+          "query": "how vegetation turns light into food",
+          "expected": [
+            "sem_photo"
+          ],
+          "category": "semantic",
+          "top1": "doc_watercycle",
+          "mrr": 0.5,
+          "recall@k": 1.0
+        },
+        {
+          "query": "hiding a note so eavesdroppers cannot understand it",
+          "expected": [
+            "sem_crypto"
+          ],
+          "category": "semantic",
+          "top1": "sem_crypto",
+          "mrr": 1.0,
+          "recall@k": 1.0
+        },
+        {
+          "query": "植物如何把阳光转化为食物",
+          "expected": [
+            "sem_photo"
+          ],
+          "category": "multilingual",
+          "top1": null,
+          "mrr": 0.0,
+          "recall@k": 0.0
+        },
+        {
+          "query": "how does water move between the ocean and the sky",
+          "expected": [
+            "doc_watercycle"
+          ],
+          "category": "semantic",
+          "top1": "doc_watercycle",
+          "mrr": 1.0,
+          "recall@k": 1.0
+        },
+        {
+          "query": "how are volcanoes formed from molten rock",
+          "expected": [
+            "doc_volcano"
+          ],
+          "category": "semantic",
+          "top1": "doc_volcano",
+          "mrr": 1.0,
+          "recall@k": 1.0
+        }
+      ]
+    },
+    "bm25_expanded": {
+      "summary": {
+        "recall@k": 0.8333333333333334,
+        "mrr": 0.8333333333333334,
+        "ndcg@k": 0.8333333333333334
+      },
+      "per_query": [
+        {
+          "query": "XR-7003",
+          "expected": [
+            "xr_7003"
+          ],
+          "category": "technical-code",
+          "top1": "xr_7003",
+          "mrr": 1.0,
+          "recall@k": 1.0
+        },
+        {
+          "query": "XR-7005",
+          "expected": [
+            "xr_7005"
+          ],
+          "category": "technical-code",
+          "top1": "xr_7005",
+          "mrr": 1.0,
+          "recall@k": 1.0
+        },
+        {
+          "query": "HTTP-403",
+          "expected": [
+            "http_403"
+          ],
+          "category": "technical-code",
+          "top1": "http_403",
+          "mrr": 1.0,
+          "recall@k": 1.0
+        },
+        {
+          "query": "HTTP-400",
+          "expected": [
+            "http_400"
+          ],
+          "category": "technical-code",
+          "top1": "http_400",
+          "mrr": 1.0,
+          "recall@k": 1.0
+        },
+        {
+          "query": "Alexander Humphrey",
+          "expected": [
+            "name_alexander_humphrey"
+          ],
+          "category": "exact-name",
+          "top1": "name_alexander_humphrey",
+          "mrr": 1.0,
+          "recall@k": 1.0
+        },
+        {
+          "query": "a beginner friendly language with tidy syntax",
+          "expected": [
+            "sem_readable"
+          ],
+          "category": "semantic",
+          "top1": "sem_readable",
+          "mrr": 1.0,
+          "recall@k": 1.0
+        },
+        {
+          "query": "reclaiming unused heap space without programmer effort",
+          "expected": [
+            "sem_gc"
+          ],
+          "category": "semantic",
+          "top1": null,
+          "mrr": 0.0,
+          "recall@k": 0.0
+        },
+        {
+          "query": "how vegetation turns light into food",
+          "expected": [
+            "sem_photo"
+          ],
+          "category": "semantic",
+          "top1": "sem_photo",
+          "mrr": 1.0,
+          "recall@k": 1.0
+        },
+        {
+          "query": "hiding a note so eavesdroppers cannot understand it",
+          "expected": [
+            "sem_crypto"
+          ],
+          "category": "semantic",
+          "top1": "sem_crypto",
+          "mrr": 1.0,
+          "recall@k": 1.0
+        },
+        {
+          "query": "植物如何把阳光转化为食物",
+          "expected": [
+            "sem_photo"
+          ],
+          "category": "multilingual",
+          "top1": null,
+          "mrr": 0.0,
+          "recall@k": 0.0
+        },
+        {
+          "query": "how does water move between the ocean and the sky",
+          "expected": [
+            "doc_watercycle"
+          ],
+          "category": "semantic",
+          "top1": "doc_watercycle",
+          "mrr": 1.0,
+          "recall@k": 1.0
+        },
+        {
+          "query": "how are volcanoes formed from molten rock",
+          "expected": [
+            "doc_volcano"
+          ],
+          "category": "semantic",
+          "top1": "doc_volcano",
+          "mrr": 1.0,
+          "recall@k": 1.0
+        }
+      ]
+    }
+  },
+  "expanded_queries": {
+    "bm25_default": {
+      "summary": {
+        "recall@k": 0.6363636363636364,
+        "mrr": 0.5757575757575757,
+        "ndcg@k": 0.5909090909090909
+      },
+      "per_query": [
+        {
+          "query": "XR-7003 智能手机",
+          "expected": [
+            "xr_7003"
+          ],
+          "category": "code+lang",
+          "top1": "xr_7003",
+          "mrr": 1.0,
+          "recall@k": 1.0
+        },
+        {
+          "query": "http 状态码 401",
+          "expected": [
+            "http_401"
+          ],
+          "category": "code+lang",
+          "top1": null,
+          "mrr": 0.0,
+          "recall@k": 0.0
+        },
+        {
+          "query": "ALEXANDER HUMPHREY",
+          "expected": [
+            "name_alexander_humphrey"
+          ],
+          "category": "name-case",
+          "top1": "name_alexander_humphrey",
+          "mrr": 1.0,
+          "recall@k": 1.0
+        },
+        {
+          "query": "humphrey alexander",
+          "expected": [
+            "name_alexander_humphrey"
+          ],
+          "category": "name-order",
+          "top1": "name_alexander_humphrey",
+          "mrr": 1.0,
+          "recall@k": 1.0
+        },
+        {
+          "query": "which phone model number is XR-7003",
+          "expected": [
+            "xr_7003"
+          ],
+          "category": "paraphrase",
+          "top1": "xr_7003",
+          "mrr": 1.0,
+          "recall@k": 1.0
+        },
+        {
+          "query": "the api status code meaning 403",
+          "expected": [
+            "http_403"
+          ],
+          "category": "paraphrase",
+          "top1": "http_400",
+          "mrr": 0.3333,
+          "recall@k": 1.0
+        },
+        {
+          "query": "garbage collector in programming",
+          "expected": [
+            "sem_gc"
+          ],
+          "category": "paraphrase",
+          "top1": "name_alexander_humphrey",
+          "mrr": 0.0,
+          "recall@k": 0.0
+        },
+        {
+          "query": "plant converting sunlight to food",
+          "expected": [
+            "sem_photo"
+          ],
+          "category": "paraphrase",
+          "top1": "sem_photo",
+          "mrr": 1.0,
+          "recall@k": 1.0
+        },
+        {
+          "query": "HTTP 错误 403 是什么意思",
+          "expected": [
+            "http_403"
+          ],
+          "category": "cross-lang",
+          "top1": null,
+          "mrr": 0.0,
+          "recall@k": 0.0
+        },
+        {
+          "query": "什么是自动垃圾回收",
+          "expected": [
+            "sem_gc"
+          ],
+          "category": "cross-lang",
+          "top1": null,
+          "mrr": 0.0,
+          "recall@k": 0.0
+        },
+        {
+          "query": "rain returning to ocean loop",
+          "expected": [
+            "doc_watercycle"
+          ],
+          "category": "paraphrase",
+          "top1": "doc_watercycle",
+          "mrr": 1.0,
+          "recall@k": 1.0
+        }
+      ]
+    },
+    "bm25_expanded": {
+      "summary": {
+        "recall@k": 0.7272727272727273,
+        "mrr": 0.6666666666666666,
+        "ndcg@k": 0.6818181818181818
+      },
+      "per_query": [
+        {
+          "query": "XR-7003 智能手机",
+          "expected": [
+            "xr_7003"
+          ],
+          "category": "code+lang",
+          "top1": "xr_7003",
+          "mrr": 1.0,
+          "recall@k": 1.0
+        },
+        {
+          "query": "http 状态码 401",
+          "expected": [
+            "http_401"
+          ],
+          "category": "code+lang",
+          "top1": null,
+          "mrr": 0.0,
+          "recall@k": 0.0
+        },
+        {
+          "query": "ALEXANDER HUMPHREY",
+          "expected": [
+            "name_alexander_humphrey"
+          ],
+          "category": "name-case",
+          "top1": "name_alexander_humphrey",
+          "mrr": 1.0,
+          "recall@k": 1.0
+        },
+        {
+          "query": "humphrey alexander",
+          "expected": [
+            "name_alexander_humphrey"
+          ],
+          "category": "name-order",
+          "top1": "name_alexander_humphrey",
+          "mrr": 1.0,
+          "recall@k": 1.0
+        },
+        {
+          "query": "which phone model number is XR-7003",
+          "expected": [
+            "xr_7003"
+          ],
+          "category": "paraphrase",
+          "top1": "xr_7003",
+          "mrr": 1.0,
+          "recall@k": 1.0
+        },
+        {
+          "query": "the api status code meaning 403",
+          "expected": [
+            "http_403"
+          ],
+          "category": "paraphrase",
+          "top1": "http_400",
+          "mrr": 0.3333,
+          "recall@k": 1.0
+        },
+        {
+          "query": "garbage collector in programming",
+          "expected": [
+            "sem_gc"
+          ],
+          "category": "paraphrase",
+          "top1": "name_alexander_humphrey",
+          "mrr": 0.0,
+          "recall@k": 0.0
+        },
+        {
+          "query": "plant converting sunlight to food",
+          "expected": [
+            "sem_photo"
+          ],
+          "category": "paraphrase",
+          "top1": "sem_photo",
+          "mrr": 1.0,
+          "recall@k": 1.0
+        },
+        {
+          "query": "HTTP 错误 403 是什么意思",
+          "expected": [
+            "http_403"
+          ],
+          "category": "cross-lang",
+          "top1": null,
+          "mrr": 0.0,
+          "recall@k": 0.0
+        },
+        {
+          "query": "什么是自动垃圾回收",
+          "expected": [
+            "sem_gc"
+          ],
+          "category": "cross-lang",
+          "top1": "sem_gc",
+          "mrr": 1.0,
+          "recall@k": 1.0
+        },
+        {
+          "query": "rain returning to ocean loop",
+          "expected": [
+            "doc_watercycle"
+          ],
+          "category": "paraphrase",
+          "top1": "doc_watercycle",
+          "mrr": 1.0,
+          "recall@k": 1.0
+        }
+      ]
+    }
+  },
+  "lexicon_size": 23
+}

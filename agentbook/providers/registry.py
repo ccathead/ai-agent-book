@@ -37,7 +37,8 @@ PROVIDERS: dict[str, Provider] = {
     "siliconflow": Provider(
         name="siliconflow",
         base_url="https://api.siliconflow.cn/v1",
-        default_model="Qwen/Qwen3.5-397B-A17B",
+        # 替换了可用模型
+        default_model="Qwen/Qwen3.5-122B-A10B",
         key_vars=("SILICONFLOW_API_KEY",),
     ),
     "doubao": Provider(

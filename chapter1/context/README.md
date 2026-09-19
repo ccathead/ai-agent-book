@@ -712,6 +712,8 @@ cp env.example .env
 #### 2. 配置提供商
 
 ```bash
+# windows
+$env:SILICONFLOW_API_KEY=your_key_here
 # For Doubao (ByteDance) - Default
 export ARK_API_KEY=your_key_here  
 python main.py  # Uses Doubao by default

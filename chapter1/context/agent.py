@@ -36,11 +36,12 @@ def _reasoning_safe_temperature(model, requested=1.0):
 # withholds silently -- the message is there, as the API requires, but it
 # carries nothing, which is what "the tool results are missing" looks like to a
 # model that has no way to tell redaction from an unhelpful tool.
+
 HIDDEN_RESULT_MARKER = "[Tool result hidden due to context mode]"
 HIDDEN_RESULT_EMPTY = ""
 HIDDEN_RESULT_STYLES = {"marker": HIDDEN_RESULT_MARKER, "empty": HIDDEN_RESULT_EMPTY}
 
-
+# 五种不同的上下文模式，用于消融研究
 class ContextMode(Enum):
     """Different context modes for ablation studies"""
     FULL = "full"  # Complete context with all components
@@ -62,6 +63,11 @@ class ToolCall:
 @dataclass
 class AgentTrajectory:
     """Tracks the agent's execution trajectory"""
+    """
+        field(default_factory=list) 是 dataclasses 模块里的函数
+        default_factory=list 
+        的含义是：每次新建实例时调一次 list() 生成新空列表。每个实例有自己独立的列表。
+    """
     reasoning_steps: List[str] = field(default_factory=list)
     tool_calls: List[ToolCall] = field(default_factory=list)
     # Exact, credential-free request/response evidence for every real model

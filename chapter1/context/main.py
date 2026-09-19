@@ -242,6 +242,7 @@ Present a detailed financial analysis with all conversions and calculations."""
             Flat list of test results (one entry per case x mode).
         """
         # Default: single multinational-budget case (preserves prior behaviour).
+        # 默认case
         if cases is None:
             cases = [{
                 "name": "Multinational Budget",
