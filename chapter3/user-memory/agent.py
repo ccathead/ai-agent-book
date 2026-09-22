@@ -112,7 +112,8 @@ class UserMemoryAgent:
                 api_key=api_key,
                 base_url="https://api.siliconflow.cn/v1"
             )
-            self.model = model or "Qwen/Qwen3-235B-A22B-Thinking-2507"
+            # 更改默认模型为 Qwen3.5-122B-A10B，确保与最新的 SiliconFlow API 兼容 -2026/9/22
+            self.model = model or "Qwen/Qwen3.5-122B-A10B"
         elif self.provider == "doubao":
             self.client = OpenAI(
                 api_key=api_key,

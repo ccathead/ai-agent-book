@@ -46,6 +46,7 @@ class ToolCallingAgent:
         # Official vLLM GPU execution requires Linux. WSL2 reports itself as
         # Linux here, while native Windows must use Ollama even when PyTorch
         # can see a CUDA-capable GPU.
+        # 对应到不同的操作系统可以使什么样的OpenAI兼容接口
         if system == "Linux":
             try:
                 import torch
@@ -65,7 +66,7 @@ class ToolCallingAgent:
         # Default to Ollama for macOS or Linux systems without CUDA
         logger.info(f"Using Ollama on {system}")
         return "ollama"
-    
+
     def _initialize_backend(self):
         """Initialize the selected backend"""
         if self.backend_type == "vllm":
@@ -84,6 +85,7 @@ class ToolCallingAgent:
             
             try:
                 response = requests.get(server_url, timeout=1)
+                # HTTP 状态码 200 表示服务器正常响应
                 if response.status_code != 200:
                     raise ConnectionError("vLLM server not responding")
             except Exception:
@@ -322,7 +324,8 @@ def run_single_task(agent: ToolCallingAgent, task: str, stream: bool = True):
                 last_chunk_type = chunk_type
             
             print("\n" + "-"*40)
-            
+
+        # If not streaming, just get the full response
         else:
             print("\n⏳ Processing...")
             response = agent.chat(task, stream=False)

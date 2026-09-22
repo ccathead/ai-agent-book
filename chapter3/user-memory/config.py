@@ -47,7 +47,7 @@ def openrouter_model_id(model) -> str:
 # primary provider key is missing but OPENROUTER_API_KEY is present.
 PROVIDER_DEFAULT_MODELS = {
     "dashscope": "qwen3.7-plus",
-    "siliconflow": "Qwen/Qwen3-235B-A22B-Thinking-2507",
+    "siliconflow": "Qwen/Qwen3.5-122B-A10B",
     "doubao": os.getenv("ARK_MODEL", "doubao-seed-1-6-250615"),
     "kimi": "kimi-k3",
     "moonshot": "kimi-k3",
